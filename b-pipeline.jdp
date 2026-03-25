@@ -17,7 +17,7 @@ pipeline {
         stage ('DOCKER-BUILD'){
             steps{
                 sh '''cd backend
-                    docker build . -t nandinihedaookalsait1/backend-app:latest
+                    docker build . -t nandinihedaoo/backend-app:latest
                     docker push nandinihedaoo/backend-app:latest
                     docker rmi nandinihedaoo/backend-app:latest
                     '''
