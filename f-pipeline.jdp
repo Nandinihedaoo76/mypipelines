@@ -19,7 +19,7 @@ pipeline {
             steps{
                 sh '''
                     cd frontend
-                    aws s3 cp dist/ s3://infra-staging-bucke/ --recursive
+                    aws s3 cp dist/ s3://infra-staging-bucket/ --recursive
                 '''
             }
         }
